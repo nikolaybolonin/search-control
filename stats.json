@@ -1,8 +1,8 @@
 {
   "hash": "b478e4ed68e119104281",
   "version": "5.21.2",
-  "time": 6439,
-  "builtAt": 1613233578070,
+  "time": 12427,
+  "builtAt": 1613233721261,
   "publicPath": "/search-control",
   "outputPath": "C:\\Users\\hackz\\code\\тестовое\\search-control\\build",
   "assetsByChunkName": {
@@ -64,12 +64,12 @@
     {
       "type": "asset",
       "name": "./index.html",
-      "size": 585,
+      "size": 627,
       "emitted": true,
       "comparedForEmit": false,
       "cached": false,
       "info": {
-        "size": 585
+        "size": 627
       },
       "chunkNames": [],
       "chunkIdHints": [],
@@ -131,8 +131,8 @@
           "optional": false,
           "orphan": false,
           "dependent": true,
-          "issuer": "C:\\Users\\hackz\\code\\тестовое\\search-control\\node_modules\\react\\cjs\\react.production.min.js",
-          "issuerName": "./node_modules/react/cjs/react.production.min.js",
+          "issuer": "C:\\Users\\hackz\\code\\тестовое\\search-control\\node_modules\\react-dom\\cjs\\react-dom.production.min.js",
+          "issuerName": "./node_modules/react-dom/cjs/react-dom.production.min.js",
           "issuerPath": [
             {
               "identifier": "C:\\Users\\hackz\\code\\тестовое\\search-control\\node_modules\\babel-loader\\lib\\index.js??ruleSet[1].rules[0].use!C:\\Users\\hackz\\code\\тестовое\\search-control\\src\\index.js",
@@ -140,21 +140,21 @@
               "id": null
             },
             {
-              "identifier": "C:\\Users\\hackz\\code\\тестовое\\search-control\\node_modules\\react\\index.js",
-              "name": "./node_modules/react/index.js",
-              "id": 294
+              "identifier": "C:\\Users\\hackz\\code\\тестовое\\search-control\\node_modules\\react-dom\\index.js",
+              "name": "./node_modules/react-dom/index.js",
+              "id": 935
             },
             {
-              "identifier": "C:\\Users\\hackz\\code\\тестовое\\search-control\\node_modules\\react\\cjs\\react.production.min.js",
-              "name": "./node_modules/react/cjs/react.production.min.js",
-              "id": 408
+              "identifier": "C:\\Users\\hackz\\code\\тестовое\\search-control\\node_modules\\react-dom\\cjs\\react-dom.production.min.js",
+              "name": "./node_modules/react-dom/cjs/react-dom.production.min.js",
+              "id": 448
             }
           ],
           "failed": false,
           "errors": 0,
           "warnings": 0,
           "id": 418,
-          "issuerId": 408,
+          "issuerId": 448,
           "chunks": [
             179
           ],
@@ -2417,8 +2417,8 @@
       "cacheable": true,
       "optional": false,
       "orphan": false,
-      "issuer": "C:\\Users\\hackz\\code\\тестовое\\search-control\\node_modules\\react\\cjs\\react.production.min.js",
-      "issuerName": "./node_modules/react/cjs/react.production.min.js",
+      "issuer": "C:\\Users\\hackz\\code\\тестовое\\search-control\\node_modules\\react-dom\\cjs\\react-dom.production.min.js",
+      "issuerName": "./node_modules/react-dom/cjs/react-dom.production.min.js",
       "issuerPath": [
         {
           "identifier": "C:\\Users\\hackz\\code\\тестовое\\search-control\\node_modules\\babel-loader\\lib\\index.js??ruleSet[1].rules[0].use!C:\\Users\\hackz\\code\\тестовое\\search-control\\src\\index.js",
@@ -2426,21 +2426,21 @@
           "id": null
         },
         {
-          "identifier": "C:\\Users\\hackz\\code\\тестовое\\search-control\\node_modules\\react\\index.js",
-          "name": "./node_modules/react/index.js",
-          "id": 294
+          "identifier": "C:\\Users\\hackz\\code\\тестовое\\search-control\\node_modules\\react-dom\\index.js",
+          "name": "./node_modules/react-dom/index.js",
+          "id": 935
         },
         {
-          "identifier": "C:\\Users\\hackz\\code\\тестовое\\search-control\\node_modules\\react\\cjs\\react.production.min.js",
-          "name": "./node_modules/react/cjs/react.production.min.js",
-          "id": 408
+          "identifier": "C:\\Users\\hackz\\code\\тестовое\\search-control\\node_modules\\react-dom\\cjs\\react-dom.production.min.js",
+          "name": "./node_modules/react-dom/cjs/react-dom.production.min.js",
+          "id": 448
         }
       ],
       "failed": false,
       "errors": 0,
       "warnings": 0,
       "id": 418,
-      "issuerId": 408,
+      "issuerId": 448,
       "chunks": [
         179
       ],
@@ -2848,8 +2848,8 @@
       "name": "HtmlWebpackCompiler",
       "hash": "ca29f0caac882e9ed8d8",
       "version": "5.21.2",
-      "time": 185,
-      "builtAt": 1613233571870,
+      "time": 210,
+      "builtAt": 1613233709128,
       "publicPath": "/search-control",
       "outputPath": "C:\\Users\\hackz\\code\\тестовое\\search-control\\build",
       "assetsByChunkName": {},
