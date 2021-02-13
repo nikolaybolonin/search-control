@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "target": "es2017",
+    "baseUrl": "./",
+    "experimentalDecorators": true,
+    "checkJs": false,
+    "paths": {
+      // Keep in sync with .eslintrc and webpack.config.js
+      "components/*": ["src/components/*"],
+      "constants/*": ["src/constants/*"],
+      "store/*": ["src/store/*"],
+      "ui/*": ["src/ui/*"],
+      "helpers/*": ["src/helpers/*"]
+    }
+  }
+}
