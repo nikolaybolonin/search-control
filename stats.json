@@ -1,8 +1,8 @@
 {
   "hash": "b478e4ed68e119104281",
   "version": "5.21.2",
-  "time": 6919,
-  "builtAt": 1613233428311,
+  "time": 6439,
+  "builtAt": 1613233578070,
   "publicPath": "/search-control",
   "outputPath": "C:\\Users\\hackz\\code\\тестовое\\search-control\\build",
   "assetsByChunkName": {
@@ -2848,8 +2848,8 @@
       "name": "HtmlWebpackCompiler",
       "hash": "ca29f0caac882e9ed8d8",
       "version": "5.21.2",
-      "time": 342,
-      "builtAt": 1613233421802,
+      "time": 185,
+      "builtAt": 1613233571870,
       "publicPath": "/search-control",
       "outputPath": "C:\\Users\\hackz\\code\\тестовое\\search-control\\build",
       "assetsByChunkName": {},
