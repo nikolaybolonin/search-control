@@ -1,9 +1,9 @@
 {
   "hash": "b478e4ed68e119104281",
   "version": "5.21.2",
-  "time": 6608,
-  "builtAt": 1613233978658,
-  "publicPath": "/search-control",
+  "time": 6579,
+  "builtAt": 1613234143944,
+  "publicPath": "https://nikolaybolonin.github.io/search-control",
   "outputPath": "C:\\Users\\hackz\\code\\тестовое\\search-control\\build",
   "assetsByChunkName": {
     "main": [
@@ -64,12 +64,12 @@
     {
       "type": "asset",
       "name": "./index.html",
-      "size": 723,
+      "size": 755,
       "emitted": true,
       "comparedForEmit": false,
       "cached": false,
       "info": {
-        "size": 723
+        "size": 755
       },
       "chunkNames": [],
       "chunkIdHints": [],
@@ -2848,9 +2848,9 @@
       "name": "HtmlWebpackCompiler",
       "hash": "ca29f0caac882e9ed8d8",
       "version": "5.21.2",
-      "time": 167,
-      "builtAt": 1613233972283,
-      "publicPath": "/search-control",
+      "time": 229,
+      "builtAt": 1613234137678,
+      "publicPath": "https://nikolaybolonin.github.io/search-control",
       "outputPath": "C:\\Users\\hackz\\code\\тестовое\\search-control\\build",
       "assetsByChunkName": {},
       "assets": [],
