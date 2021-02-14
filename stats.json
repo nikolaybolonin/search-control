@@ -1,9 +1,9 @@
 {
   "hash": "b478e4ed68e119104281",
   "version": "5.21.2",
-  "time": 6283,
-  "builtAt": 1613303146072,
-  "publicPath": "search-control/",
+  "time": 6730,
+  "builtAt": 1613303300154,
+  "publicPath": "/search-control",
   "outputPath": "C:\\Users\\hackz\\code\\тестовое\\search-control\\build",
   "assetsByChunkName": {
     "main": [
@@ -64,12 +64,12 @@
     {
       "type": "asset",
       "name": "./index.html",
-      "size": 626,
+      "size": 627,
       "emitted": true,
       "comparedForEmit": false,
       "cached": false,
       "info": {
-        "size": 626
+        "size": 627
       },
       "chunkNames": [],
       "chunkIdHints": [],
@@ -2848,9 +2848,9 @@
       "name": "HtmlWebpackCompiler",
       "hash": "ca29f0caac882e9ed8d8",
       "version": "5.21.2",
-      "time": 174,
-      "builtAt": 1613303140017,
-      "publicPath": "search-control/",
+      "time": 252,
+      "builtAt": 1613303293744,
+      "publicPath": "/search-control",
       "outputPath": "C:\\Users\\hackz\\code\\тестовое\\search-control\\build",
       "assetsByChunkName": {},
       "assets": [],
