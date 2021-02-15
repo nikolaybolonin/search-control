@@ -55,4 +55,8 @@ export const ListItem = styled(StyledDiv)`
       fill: ${textColor.light};
     }
   }
+
+  &:last-child {
+    border-bottom: none;
+  }
 `;
