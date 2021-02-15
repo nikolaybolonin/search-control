@@ -7,6 +7,7 @@ import { getReposForSearch } from 'store/selectors/dataSelectors';
 import { fetchRepos } from 'store/actions/data';
 // components
 import DropdownList from './DropdownList';
+import OnClickOutside from 'components/helpers/OnClickOutside';
 // ui
 import {
   InputContainer,
@@ -80,41 +81,50 @@ export default class Search extends Component {
     this.setState({ text: '' }, this.focusInput);
   };
 
+  onBlur = () => {
+    this.setState({ text: '' });
+  };
+
   render() {
     const { text, isLoading } = this.state;
     const { repos } = this.props;
 
     return (
-      <InputContainer>
-        <Input
-          value={text}
-          placeholder="Type anything..."
-          onChange={this.onChange}
-          ref={this.storeInputRef}
-        />
+      <OnClickOutside onClickOutside={this.onBlur}>
+        {({ storeRef }) => (
+          <InputContainer ref={storeRef}>
+            <Input
+              value={text}
+              placeholder="Type anything..."
+              onChange={this.onChange}
+              ref={this.storeInputRef}
+            />
 
-        <PrefixIcon>
-          <SearchIcon />
-        </PrefixIcon>
+            <PrefixIcon>
+              <SearchIcon />
+            </PrefixIcon>
 
-        {isLoading && (
-          <LoadingIcon>
-            <SpinnerIcon />
-          </LoadingIcon>
+            {isLoading && (
+              <LoadingIcon>
+                <SpinnerIcon />
+              </LoadingIcon>
+            )}
+
+            {text && !isLoading && (
+              <CrossButton onClick={this.onClear}>
+                <CloseIcon />
+              </CrossButton>
+            )}
+
+            <DropdownList
+              data={repos}
+              query={text}
+              active={repos.length && text.length > 1}
+              onSelect={this.onBlur}
+            />
+          </InputContainer>
         )}
-
-        {text && !isLoading && (
-          <CrossButton onClick={this.onClear}>
-            <CloseIcon />
-          </CrossButton>
-        )}
-
-        <DropdownList
-          data={repos}
-          query={text}
-          active={repos.length && text.length > 1}
-        />
-      </InputContainer>
+      </OnClickOutside>
     );
   }
 }
