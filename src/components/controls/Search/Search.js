@@ -39,6 +39,7 @@ export default class Search extends Component {
     this.state = {
       text: '',
       isLoading: false,
+      isActive: false,
     };
 
     this.input = null;
@@ -82,17 +83,26 @@ export default class Search extends Component {
   };
 
   onBlur = () => {
-    this.setState({ text: '' });
+    this.setState({ isActive: false }, () => {
+      // This hack needed in order to animate dropdown hiding nicely on click outside or reset
+      setTimeout(() => {
+        this.setState({ text: '' });
+      }, 100);
+    });
+  };
+
+  onFocus = () => {
+    this.setState({ isActive: true });
   };
 
   render() {
-    const { text, isLoading } = this.state;
+    const { text, isLoading, isActive } = this.state;
     const { repos } = this.props;
 
     return (
       <OnClickOutside onClickOutside={this.onBlur}>
         {({ storeRef }) => (
-          <InputContainer ref={storeRef}>
+          <InputContainer ref={storeRef} onFocus={this.onFocus}>
             <Input
               value={text}
               placeholder="Type anything..."
@@ -119,7 +129,7 @@ export default class Search extends Component {
             <DropdownList
               data={repos}
               query={text}
-              active={repos.length && text.length > 1}
+              active={isActive && repos.length && text.length > 1}
               onSelect={this.onBlur}
             />
           </InputContainer>
