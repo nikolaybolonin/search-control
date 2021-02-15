@@ -32,7 +32,9 @@ function DropdownList({ data, query, active, onSelect }) {
     return null;
   }
 
-  const filteredData = data.filter(({ title }) => title.includes(query));
+  const filteredData = data.filter(({ title }) =>
+    title.toUpperCase().includes(query.toUpperCase()),
+  );
 
   return (
     <DropdownContainer
