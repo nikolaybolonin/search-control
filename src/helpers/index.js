@@ -30,3 +30,8 @@ export const getDataAttribute = (node, attr, dataAttr) => {
 
   return undefined;
 };
+
+export const openInNewTab = url => {
+  const win = window.open(url, '_blank');
+  win.focus();
+};
