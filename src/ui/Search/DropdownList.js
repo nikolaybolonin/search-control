@@ -1,12 +1,11 @@
 // vendor modules
-import styled, { keyframes } from 'styled-components';
+import styled from 'styled-components';
 // ui
 import { backgroundColor, textColor } from 'ui/colors';
 import { StyledDiv } from 'ui/DemoApp';
-import { IconContainer } from 'ui/icons';
 
 const dropdownItemHeight = 48;
-const dropdownMaxItems = 6;
+const dropdownMaxItems = 4;
 
 export const DropdownContainer = styled(StyledDiv)`
   position: absolute;
@@ -18,7 +17,7 @@ export const DropdownContainer = styled(StyledDiv)`
 
   height: ${({ active, data }) =>
     active
-      ? `${Math.min(data.length, dropdownMaxItems) * dropdownItemHeight}px`
+      ? `${Math.min(data.length, dropdownMaxItems) * dropdownItemHeight + 2}px`
       : '0px'};
   opacity: ${({ active }) => (active ? '1' : '0')};
   border: ${({ active }) => (active ? '1px' : '0px')} solid
@@ -28,6 +27,14 @@ export const DropdownContainer = styled(StyledDiv)`
 
   overflow: hidden;
   transition: all 0.1s ease-out;
+`;
+
+export const ScrollContainer = styled(StyledDiv)`
+  height: 100%;
+  overflow-y: auto;
+
+  flex-direction: column;
+  align-items: flex-start;
 `;
 
 export const ListItem = styled(StyledDiv)`

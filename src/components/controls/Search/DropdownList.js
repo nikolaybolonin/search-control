@@ -5,7 +5,7 @@ import noop from 'lodash/noop';
 // components
 import ListItem from './ListItem';
 // ui
-import { DropdownContainer } from 'ui/Search/DropdownList';
+import { DropdownContainer, ScrollContainer } from 'ui/Search/DropdownList';
 
 const proptypes = {
   data: PropTypes.arrayOf(
@@ -39,9 +39,11 @@ function DropdownList({ data, query, active, onSelect }) {
       active={active && filteredData.length}
       data={filteredData}
     >
-      {filteredData.map(({ id, title, url }) => (
-        <ListItem key={id} {...{ title, url, onSelect }} />
-      ))}
+      <ScrollContainer>
+        {filteredData.map(({ id, title, url }) => (
+          <ListItem key={id} {...{ title, url, onSelect }} />
+        ))}
+      </ScrollContainer>
     </DropdownContainer>
   );
 }

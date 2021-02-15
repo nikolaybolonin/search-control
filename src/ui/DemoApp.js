@@ -70,6 +70,32 @@ export const GlobalStyle = createGlobalStyle`
     margin: 0;
     padding: 0;
   }
+
+  /* Немного стилей для скролл бара */
+  ::-webkit-scrollbar-track {
+    border-radius: 5px;
+    background: ${backgroundColor.greylight};
+    -webkit-box-shadow: none;
+  }
+
+  ::-webkit-scrollbar {
+      width: 7px;
+      height: 7px;
+      background: ${backgroundColor.greylight};
+  }
+
+  ::-webkit-scrollbar-thumb {
+      border-radius: 2px;
+      background-color: ${backgroundColor.grey};
+      -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.1);
+      border: 1px solid ${backgroundColor.greylight};
+  }
+
+  *:hover::-webkit-scrollbar-thumb {
+      border-radius: 2px;
+      background-color: rgba(0,0,0,.3);
+      -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.2);
+  }
 `;
 
 export const StyledDiv = styled.div`
