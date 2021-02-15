@@ -8,7 +8,7 @@ export default (
   action,
 ) => {
   switch (action.type) {
-    case type.GET_REPOS: {
+    case type.INSERT_FETCHED_REPOS: {
       return {
         ...state,
         ...action.payload,

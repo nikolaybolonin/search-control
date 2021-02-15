@@ -18,6 +18,7 @@ export default {
   entry: {
     main: [
       isDevelopment && 'webpack-hot-middleware/client',
+      '@babel/polyfill',
       paths.appIndexJs,
     ].filter(Boolean),
   },

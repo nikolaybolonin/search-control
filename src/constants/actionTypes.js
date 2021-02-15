@@ -3,5 +3,5 @@ import keyMirror from 'keymirror';
 
 export const type = keyMirror({
   // data
-  GET_REPOS: null,
+  INSERT_FETCHED_REPOS: null,
 });

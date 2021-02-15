@@ -1,6 +1,7 @@
 // vendor modules
 import React from 'react';
-// import Search from '../controls/Search';
+// components
+import Search from '../controls/Search/Search';
 // ui
 import { GlobalStyle, DemoFrame, AppBody, Head } from 'ui/DemoApp';
 
@@ -10,7 +11,9 @@ export default function DemoApp() {
       <AppBody>
         <GlobalStyle />
 
-        <Head>{/* <Search /> */}</Head>
+        <Head>
+          <Search />
+        </Head>
       </AppBody>
     </DemoFrame>
   );

@@ -5,6 +5,7 @@ const config = {
   APP_HOST: '127.0.0.1',
   APP_PORT: '3000',
   PUBLIC_URL: isDevelopment ? '/static' : '/search-control',
+  API_URL: 'https://api.github.com/orgs/kraftvaerk/repos',
 };
 
 const stringifiedConfig = {

@@ -30,6 +30,10 @@ export const GlobalStyle = createGlobalStyle`
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 
+    background-color: ${backgroundColor.main};
+  }
+
+  div, input {
     font-family: Roboto;
     font-size: 16px;
     font-style: normal;
@@ -38,8 +42,6 @@ export const GlobalStyle = createGlobalStyle`
     letter-spacing: 0.01em;
     text-align: left;
     color: ${textColor.dark};
-
-    background-color: ${backgroundColor.main};
   }
 
   *,
@@ -83,8 +85,11 @@ export const AppBody = styled(StyledDiv)`
 
 export const Head = styled(StyledDiv)`
   height: 80px;
+  padding: 12px;
+
   background-color: ${backgroundColor.dark};
 
   flex-direction: column;
   align-items: flex-start;
+  justify-content: center;
 `;
